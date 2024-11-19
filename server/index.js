@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors({
-  origin:"https://parking-vehicle.vercel.app/",
+  origin:"https://parking-vehicle-ujes.vercel.app/",
   credentials:true
 }));
 app.use(bodyParse.json());
