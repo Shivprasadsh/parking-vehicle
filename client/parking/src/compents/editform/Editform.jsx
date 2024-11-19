@@ -15,7 +15,7 @@ function EditForm() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const url = `https://parking-vehicle-ujes.vercel.app/?vercelToolbarCode=Z8ZXdQSnX_vwUfo//api/details/${id}`;
+                const url = `https://parking-vehicle-ujes.vercel.app/?vercelToolbarCode=Z8ZXdQSnX_vwUfo/api/details/${id}`;
                 const response = await axios.get(url);
                 
                 if (response.data) {
@@ -43,7 +43,7 @@ function EditForm() {
             parkingSlot: parkingSlotRef.current.value,
         };
 
-        const url = `https://parking-vehicle-ujes.vercel.app/?vercelToolbarCode=Z8ZXdQSnX_vwUfo//api/update/${id}`;
+        const url = `https://parking-vehicle-ujes.vercel.app/?vercelToolbarCode=Z8ZXdQSnX_vwUfo/api/update/${id}`;
 
         try {
             const response = await axios.put(url, updatedVehicle);  // Use updatedVehicle here
