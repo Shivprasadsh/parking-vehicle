@@ -19,7 +19,7 @@ function RegistrationForm() {
 
     const submitHandler = (e) => {
         e.preventDefault();  
-        const url = 'http://localhost:3000/api/parkIn'; 
+        const url = 'https://parking-vehicle-ujes.vercel.app/?vercelToolbarCode=Z8ZXdQSnX_vwUfo/api/parkIn'; 
 
         axios.post(url, record)
             .then((res) => {

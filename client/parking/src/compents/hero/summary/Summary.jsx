@@ -11,7 +11,7 @@ const SummaryParking = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/api/summary');
+        const res = await axios.get('https://parking-vehicle-ujes.vercel.app/?vercelToolbarCode=Z8ZXdQSnX_vwUfo/api/summary');
         setRecord(res.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -23,7 +23,7 @@ const SummaryParking = () => {
   // Handle vehicle removal
   const removeVehicle = async (vehicleNo, parkingSlot) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/removeVehicle', {
+      const response = await axios.post('https://parking-vehicle-ujes.vercel.app/?vercelToolbarCode=Z8ZXdQSnX_vwUfo/api/removeVehicle', {
         vehicleNo,
         parkingSlot
       });
@@ -41,7 +41,7 @@ const SummaryParking = () => {
   // Handle vehicle check-in
   const checkInVehicle = async (vehicleNo, parkingSlot) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/chenkinVhl', {
+      const response = await axios.post('https://parking-vehicle-ujes.vercel.app/?vercelToolbarCode=Z8ZXdQSnX_vwUfo/api/chenkinVhl', {
         vehicleNo,
         parkingSlot
       });
