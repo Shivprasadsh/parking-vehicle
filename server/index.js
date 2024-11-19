@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors({
-  origin:"https://parking-vehicle-zbdl.vercel.app/?vercelToolbarCode=KYWhcVLbmr7nfsQ/",
+  origin:"https://parking-vehicle-9su55s1s6-shivprasad-shivadas-nairs-projects.vercel.app/",
   credentials:true
 }));
 app.use(bodyParse.json());
