@@ -1,0 +1,98 @@
+.main-nav {
+    display: flex;
+    justify-content: center; /* Center the navbar horizontally */
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    background-color: #333;
+    padding: 30px 0; /* Adds space around the navbar */
+}
+
+.sub-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content inside sub-nav */
+}.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    padding: 30px 0;
+}
+
+.sub-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.regis-nav h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .regis-nav h1 {
+        font-size: 24px;
+    }
+
+    .links a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .main-nav {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .regis-nav h1 {
+        font-size: 20px;
+    }
+
+    .links a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .main-nav {
+        padding: 15px 0;
+    }
+}
+
+
+.regis-nav h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px; /* Add space between heading and links */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-bottom: 15px; /* Space between the links */
+}
+
+a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
